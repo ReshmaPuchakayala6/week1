@@ -1,5 +1,5 @@
 Securing Healthcare with Deep Learning: A CNN-Based Model for medical IoT Threat Detection
-Welcome to the repository accompanying our paper, "Securing Healthcare with Deep Learning: A CNN-Based Model for medical IoT Threat Detection" This work was presented at the 2024 19th Iranian Conference on Intelligent Systems (ICIS) held from October 23-24, 2024 (IEEE indexed Conference), at Sirjan University of Technology in Sirjan, Kerman, Iran.
+Welcome to the repository accompanying this paper, "Securing Healthcare with Deep Learning: A CNN-Based Model for medical IoT Threat Detection" This work was presented at the 2024 19th Iranian Conference on Intelligent Systems (ICIS) held from October 23-24, 2024 (IEEE indexed Conference), at Sirjan University of Technology in Sirjan, Kerman, Iran.
 
 Achievements and Contributions
 The proposed model achieved a perfect accuracy of 0.99 across binary, categorical, and multiclass classification tasks, outperforming previous state-of-the-art methods.
@@ -15,10 +15,6 @@ Model Classification Task	Accuracy	Precision	Recall	F1-Score
 Proposed Model (19 Class)	0.99	0.98	0.99	0.98
 Proposed Model (2 Class)	0.99	0.99	0.99	0.99
 Proposed Model (6 Class)	0.99	0.99	0.99	0.99
-https://github.com/ReshmaPuchakayala6/week1/blob/main/MINI_PROJECT/380271649-7dc2bd46-c2ea-49cb-b94f-7ee42b268d56.png
-https://github.com/ReshmaPuchakayala6/week1/blob/aec02f226832bff1355db09e492f2ffd96404f37/MINI_PROJECT/380271649-7dc2bd46-c2ea-49cb-b94f-7ee42b268d56.png
-
-model_comparison_subplots_barchart_improved
 
 Project Structure
 project/
@@ -32,13 +28,13 @@ project/
 ├── requirements.txt      # Project dependencies
 └── README.md             # Project description (this file)
 └── README_DATA.md        # Data Preparation Guide
-fcn8_page-0001 (1) Architecture of the CNN model for IoMT attack classification
 
 Getting Started
 1. Prerequisites
 Python 3.7+
 Required Libraries: Install dependencies by running:
 pip install -r requirements.txt
+
 2. Data Preparation
 Dataset:
 Download the "CIC IoMT dataset 2024" dataset in CSV format from here(details in README_DATA.md). After downloading, extract and place the CSV files in the appropriate directories (data/train/ and data/test/).
@@ -55,3 +51,17 @@ Replace <num_classes> with:
 2 for binary classification,
 6 for categorical,
 19 for multiclass.
+
+Example (binary classification):
+python main.py --class_config 2
+
+Code Overview
+data_loader.py: Manages data loading, preprocessing, and splitting into training/testing sets.
+model.py: Defines the CNN architecture, including layers optimized for network traffic data.
+main.py: Executes training and evaluation processes based on specified configuration.
+
+Citation :
+Mohammadi, A., Ghahramani, H., Asghari, S. A., & Aminian, M. (2024). Securing healthcare with deep learning: A CNN-based model for medical IoT threat detection. In 2024 19th Iranian Conference on Intelligent Systems (ICIS) (pp. 168-173). IEEE. https://doi.org/10.1109/ICIS64839.2024.10887510
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
