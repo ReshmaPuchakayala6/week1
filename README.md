@@ -11,3 +11,6 @@ gitlink:
 https://github.com/ReshmaPuchakayala6/week1
 
 https://github.com/ReshmaPuchakayala6/week1/blob/main/ICP3.ipynb
+
+
+exam2 vedio link:https://drive.google.com/file/d/1G8ljOlvRzOkbBTx2bqml6dv1Fc9OLDd9/view?usp=sharing
